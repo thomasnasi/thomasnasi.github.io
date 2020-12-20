@@ -1,12 +1,17 @@
 body {
 	width: 100vw;
 	height: 100vh;
-  font-family: "Open Sans", sans-serif;
+  font-family: din-condensed, sans-serif !important;
+	font-style: normal !important;
+	font-weight: 300 !important;
 }
 
 .title-home {
 	margin-top: 25px;
   align-content: : center;
+	font-family: din-condensed, sans-serif;
+	font-style: normal;
+	font-weight: 300;
 }
 
 .center-container {
@@ -41,10 +46,21 @@ body {
 
 .outer {
     position: relative;
-    padding: 0 3vw;
+    padding: 0 1vw;
 	}
 
-	.little-margin {
-		margin-right: 1vw;
-		margin-left: 1vw;
+.little-margin {
+		margin-right: 0.25vw;
+		margin-left: 0.25vw;
 	}
+
+.video {
+	margin-top: 15px;
+	max-width: 100%;
+}
+
+video {
+  /* override other styles to make responsive */
+  width: 100%    !important;
+  height: auto   !important;
+}
